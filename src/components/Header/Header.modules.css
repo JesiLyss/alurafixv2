@@ -1,0 +1,24 @@
+.header {
+    background: linear-gradient(var(--black), var(--mid-violet));
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    align-content: center;
+}
+
+.navbar {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.navbar__link {
+    color: var(--white);
+    filter: drop-shadow(0 0 10px var(--black));
+    font-weight: 700;
+    font-style: italic;
+}

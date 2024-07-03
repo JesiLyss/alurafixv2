@@ -1,0 +1,7 @@
+.form {
+    width: 60%;
+    margin: auto;
+    padding: 1em;
+    background: linear-gradient(var(--white), var(--grey));
+    border-radius: 10px;
+}
