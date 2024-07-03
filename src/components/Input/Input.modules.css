@@ -1,0 +1,22 @@
+.input__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 1em;
+}
+
+.label {
+    width: 20%;
+    color: var(--black);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.input {
+    width: 70%;
+    padding: .5em;
+    border: 1px solid var(--light-violet);
+    border-radius: 5px;
+}

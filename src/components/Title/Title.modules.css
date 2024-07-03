@@ -1,0 +1,18 @@
+h1, h2, h3, h4 {
+    color: var(--light-violet);
+    filter: drop-shadow(0px 1px 10px var(--black));
+    font: 3em 'Alfa Slab One', sans-serif;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    color: var(--black);
+    font-size: 1.5em;
+}
