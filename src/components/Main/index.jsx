@@ -1,11 +1,18 @@
 import Title from '../Title';
 import './Main.modules.css';
 
-function Main({type, content, mainContent}){
+function Main({type, content, mainContent, styles}){
+
+    if(styles){
+        styles += " container";
+    }else{
+        styles = "container";
+    }
+
     return(
     <>
-        <div className="container">
-            <Title type={type} content={content} />
+        <Title styles="main__title" type={type} content={content} />
+        <div className={styles}>
             {mainContent}
         </div>
     </>
