@@ -1,0 +1,20 @@
+.banner {
+    position: relative;
+    height: 60vh;
+    width: 100vw;
+}
+
+.img {
+    position: fixed;
+    top: 0;
+}
+
+.title {
+    background: linear-gradient(var(--black), var(--dark-violet));
+    border-radius: 15px;
+    position: absolute;
+    padding: .5em;
+    margin: 0 2em;
+    width: 40%;
+    top: 30%;
+}

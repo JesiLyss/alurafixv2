@@ -1,11 +1,16 @@
-import Image from "../Image/index.jsx";
-import banner from './dogs-banner.webp'
+import Image from '../Image';
+import banner from './dogs-banner.webp';
+import Title from '../Title';
+import './Banner.modules.css';
 
-const Banner = () =>{
+function Banner(){
     return(
+    <>
         <div className="banner">
-            <Image img={banner} alt="Imagen de dos perros juntos" />
+            <Title styles="title" content="Crea y descubre los mejores videos en Alura Flix" type="h3" />
+            <Image styles="img" img={banner} alt="Imagen de dos perros juntos" />
         </div>
+    </>
     );
 }
 
