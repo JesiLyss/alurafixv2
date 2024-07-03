@@ -1,8 +1,7 @@
 import Error from "./pages/Error";
 import NewVideo from "./pages/NewVideo";
-
-const { BrowserRouter, Routes, Route } = require("react-router-dom");
-const { Home } = require("./pages/Home");
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
 
 function AppRouter(){
     return(
