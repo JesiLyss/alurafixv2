@@ -1,0 +1,25 @@
+{
+    "videos": [
+        {
+            "id": 1,
+            "title": "Baby Animals",
+            "description": "Sit back and relax while enjoying this scenic film captures the marvelous and amazing world of cute baby animals.",
+            "url": "https://www.youtube.com/watch?v=oRDRfikj2z8&pp=ygUOYW5pbWFscyB2aWRlb3M%3D",
+            "iframe": "../assets/img/card-jiraffe.webp"
+        },
+        {
+            "id": 2,
+            "title": "Amazing Scene of Relax Animals",
+            "description": "Discover amazing wildlife and relax! In this nature film you will see the most incredible and stunning wild animals and birds!",
+            "url": "https://www.youtube.com/watch?v=5kozt0uDa4c&pp=ygUOYW5pbWFscyB2aWRlb3M%3D",
+            "iframe": "../assets/img/card-bear.webp"
+        },
+        {
+            "id": 3,
+            "title": "Scenic Wildlife Film",
+            "description": "Our world is full of so many incredible animals! Enjoy this 4k Scenic Wildlife film featuring over 130 animal species.",
+            "url": "https://www.youtube.com/watch?v=lONZdiuuQAs&pp=ygUOYW5pbWFscyB2aWRlb3M%3D",
+            "iframe": "../assets/img/card-lions.webp"
+        }
+    ]
+}
