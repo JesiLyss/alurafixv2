@@ -16,5 +16,29 @@
     padding: .5em;
     margin: 0 2em;
     width: 40%;
-    top: 30%;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 950px){
+    .title {
+        left: 25%;
+        width: 50%;
+    }
+}
+
+@media (max-width: 550px){
+    .title {
+        left: 30%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 300px){
+    .title {
+        left: 25%;
+        width: 70%;
+    }
 }
