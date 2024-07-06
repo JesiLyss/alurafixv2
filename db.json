@@ -1,25 +1,94 @@
 {
-    "videos": [
-        {
-            "id": 1,
-            "title": "Baby Animals",
-            "description": "Sit back and relax while enjoying this scenic film captures the marvelous and amazing world of cute baby animals.",
-            "url": "https://www.youtube.com/watch?v=oRDRfikj2z8&pp=ygUOYW5pbWFscyB2aWRlb3M%3D",
-            "iframe": "../assets/img/card-jiraffe.webp"
-        },
-        {
-            "id": 2,
-            "title": "Amazing Scene of Relax Animals",
-            "description": "Discover amazing wildlife and relax! In this nature film you will see the most incredible and stunning wild animals and birds!",
-            "url": "https://www.youtube.com/watch?v=5kozt0uDa4c&pp=ygUOYW5pbWFscyB2aWRlb3M%3D",
-            "iframe": "../assets/img/card-bear.webp"
-        },
-        {
-            "id": 3,
-            "title": "Scenic Wildlife Film",
-            "description": "Our world is full of so many incredible animals! Enjoy this 4k Scenic Wildlife film featuring over 130 animal species.",
-            "url": "https://www.youtube.com/watch?v=lONZdiuuQAs&pp=ygUOYW5pbWFscyB2aWRlb3M%3D",
-            "iframe": "../assets/img/card-lions.webp"
-        }
-    ]
+  "videos": [
+    {
+      "id": "1",
+      "title": "Frameworks de Front End",
+      "description": "Aprende a manipular y trabajar el desarrollo frontend con frameworks.",
+      "category": "Frontend",
+      "url": "https://youtu.be/UNeKzI2WHgQ?si=CnZxHJf89b04kB3o",
+      "image": "/assets/img/front1.png"
+    },
+    {
+      "id": "2",
+      "title": "¿Qué es la lógica de programación y cómo aplicarla?",
+      "description": "Trabaja con las diferentes consultas que existen en SQL.",
+      "category": "Backend",
+      "url": "https://youtu.be/3W983Q2NzRI?si=GfXJG5UalBCYDzR2",
+      "image": "/assets/img/back1.png"
+    },
+    {
+      "id": "3",
+      "title": "Cómo evitar robo de vehículo con IA",
+      "category": "Innovación",
+      "description": "",
+      "url": "https://youtu.be/5T_Q_NtNLZE?si=kldcO-HoIfF3j9oT",
+      "image": "/assets/img/innov1.png"
+    },
+    {
+      "id": "4",
+      "title": "¿Qué son las Soft Skills?",
+      "category": "Gestión",
+      "description": "",
+      "url": "https://youtu.be/vhwspfvI52k?si=yWXnLyBc92MpmbG-",
+      "image": "/assets/img/innov2.png"
+    },
+    {
+      "id": "5",
+      "title": "¿Cuándo usar let, var y const?",
+      "category": "Backend",
+      "description": "",
+      "url": "https://youtu.be/PztCEdIJITY?si=kdKjPc_npApjswhz",
+      "image": "/assets/img/back2.png"
+    },
+    {
+      "id": "6",
+      "title": "¿Sabes cómo organizar tu rutina de estudio?",
+      "category": "Innovación",
+      "description": "",
+      "url": "https://youtu.be/3mDnrL8YVaA?si=hBqkb_gphO6rO9A1",
+      "image": "/assets/img/innov3.png"
+    },
+    {
+      "id": "7",
+      "title": "Cómo utilizar el display block, inline, inline-block",
+      "category": "Frontend",
+      "description": "",
+      "url": "https://youtu.be/AG2QssLpQzI?si=b6ikeP_ohFaHmeDt",
+      "image": "/assets/img/front2.png"
+    },
+    {
+      "id": "8",
+      "title": "Git y GitHub para principiantes",
+      "category": "Gestión",
+      "description": "",
+      "url": "https://youtu.be/-LmFK6skG7s?si=l1bMIwc26aBCoZ0-",
+      "image": "/assets/img/front3.png"
+    },
+    {
+      "id": "9",
+      "title": "¿Qué es la programación orientada a objetos?",
+      "category": "Backend",
+      "description": "",
+      "url": "https://youtu.be/Oigen2sjagk?si=1RZA-VeoA5ixEKKz",
+      "image": "/assets/img/back3.png"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Frontend"
+    },
+    {
+      "id": "2",
+      "name": "Backend"
+    },
+    {
+      "id": "3",
+      "name": "Innovación"
+    },
+    {
+      "id": "4",
+      "name": "Gestión"
+    }
+  ]
 }
