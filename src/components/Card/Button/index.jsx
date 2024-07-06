@@ -1,12 +1,12 @@
 import './Button.modules.css';
 
-function Button({url, content, styles}){
+function Button({url, event, content, styles, type}){
 
     styles = "btn " + styles;
 
     return (
     <>
-        <a href={url} className={styles}>{content}</a>
+        <button type={type} onClick={event} className={styles}>{content}</button>
     </>
     )
 }
