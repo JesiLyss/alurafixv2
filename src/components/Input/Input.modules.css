@@ -17,6 +17,15 @@
 .input {
     width: 70%;
     padding: .5em;
+    color: var(--black);
     border: 1px solid var(--light-violet);
     border-radius: 5px;
+}
+
+.input:focus {
+    background: linear-gradient(var(--black), var(--dark-violet));
+    color: var(--white);
+    border: none;
+    outline: none;
+    transition: all .5s ease-in-out;
 }

@@ -1,6 +1,6 @@
 import './Input.modules.css';
 
-function Input({placeholder, label, id}){
+function Input({event, placeholder, label, id, type, value, readonly}){
 
     placeholder += "...";
 
@@ -8,7 +8,8 @@ function Input({placeholder, label, id}){
     <>
         <div className="input__container">
             <label className="label" htmlFor="id">{label}</label>
-            <input className="input" type="text" placeholder={placeholder}></input>
+            {!readonly ? <input onChange={event} id={id} className="input" type={type} placeholder={placeholder} value={value}></input>
+            : <input onChange={event} id={id} className="input" type={type} placeholder={placeholder} value={value} readOnly></input>}
         </div>
     </>
     )

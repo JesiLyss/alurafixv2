@@ -1,9 +1,9 @@
 import './Form.modules.css'
 
-function Form({action, method, content}){
+function Form({event, content}){
     return(
     <>
-    <form className="form" action={action} method={method}>
+    <form onSubmit={event} className="form">
         {content}
     </form>
     </>
