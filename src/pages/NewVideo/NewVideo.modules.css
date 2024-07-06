@@ -1,6 +1,6 @@
 .form {
     position: relative;
-    height: 50vh;
+    height: 60vh;
 }
 
 .btn__container {
@@ -8,6 +8,10 @@
     bottom: 1em;
     right: 1em;
     padding: .5em;
+}
+
+option {
+    color: var(--mid-violet);
 }
 
 .add {
