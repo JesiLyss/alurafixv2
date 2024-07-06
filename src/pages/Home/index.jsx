@@ -17,8 +17,8 @@ function Home(){
     }, []);
 
     
-    const cards = videos.map(video =>{
-        return <Card key={video.id} id={video.id} title={video.title} desc={video.description} url={video.iframe} />
+    const cards = videos.map((video) =>{
+        return <Card video={video} key={video.id}/>
     });
 
     return(
