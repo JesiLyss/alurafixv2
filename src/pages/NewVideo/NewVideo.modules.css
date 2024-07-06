@@ -1,13 +1,13 @@
 .form {
-    position: relative;
     height: 60vh;
 }
 
 .btn__container {
-    position: absolute;
+    width: 100%;
     bottom: 1em;
     right: 1em;
     padding: .5em;
+    text-align: end;
 }
 
 option {

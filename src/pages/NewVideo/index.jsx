@@ -43,8 +43,12 @@ function NewVideo(){
             body: JSON.stringify(newVideo)
         })
         .then(response => response.json())
-        .then(data => console.log(data));
-        cleanValues();
+        .then(data => {
+            console.log(data);
+            if(data){
+                window.location = "http://localhost:3001/";
+            }
+        });
     };
 
     const cleanValues = () => {
