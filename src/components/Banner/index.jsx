@@ -1,5 +1,5 @@
 import Image from '../Image';
-import banner from './dogs-banner.webp';
+import banner from './dev1.webp';
 import Title from '../Title';
 import './Banner.modules.css';
 
