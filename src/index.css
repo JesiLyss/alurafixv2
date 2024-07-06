@@ -27,6 +27,7 @@ Alfa Slab One
   list-style: none;
   font: 16px 'Raleway', sans-serif;
   width: fit-content;
+  scroll-behavior: smooth;
 }
 
 /* MEDIA QUERIES */
