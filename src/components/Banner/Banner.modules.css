@@ -11,11 +11,12 @@
 
 .title {
     background: linear-gradient(var(--black), var(--dark-violet));
+    box-shadow: 0px 10px 70px var(--black);
     border-radius: 15px;
     position: absolute;
     padding: .5em;
     margin: 0 2em;
-    width: 40%;
+    width: 30%;
     top: 50%;
     left: 20%;
     transform: translate(-50%, -50%);

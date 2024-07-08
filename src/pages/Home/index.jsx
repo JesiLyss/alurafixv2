@@ -9,17 +9,35 @@ import { useState, useEffect } from "react";
 function Home(){
 
     const [videos, setVideos] = useState([]);
+    const [categories, setCategories] = useState([]);
 
     useEffect(() => {
         fetch("http://localhost:3000/videos")
         .then((res) => res.json())
         .then((data) => setVideos(data));
+
+        fetch("http://localhost:3000/categories")
+        .then((res) => res.json())
+        .then((data) => setCategories(data));
     }, []);
 
+    const showVideosByCategory = (category) => {
+        const videoFilter = videos.filter(video => video.category === category);
+        if(videoFilter.length === 0) return null;
     
-    const cards = videos.map((video) =>{
-        return <Card video={video} key={video.id}/>
-    });
+        const cards = () => {
+            return videoFilter.map((video) => <Card video={video} key={video.id} />)
+        }
+
+        const style = `card__container ${category}`;
+
+        return(
+            <Main key={category}
+            styles={style}
+            type="h3" content={category} 
+            mainContent={cards()} />
+        )
+    }
 
     return(
         <>
@@ -29,7 +47,9 @@ function Home(){
                 styles="card__container"
                 type="h3"
                 content="Videos"
-                mainContent={cards}
+                mainContent={
+                    categories.map(category => showVideosByCategory(category.name))
+                }
                 />
             <Footer />
         </>
