@@ -46,7 +46,7 @@ function NewVideo(){
         .then(data => {
             console.log(data);
             if(data){
-                window.location = "http://localhost:3001/";
+                window.location = "https://aluraflix-xi-orpin.vercel.app";
             }
         });
     };
