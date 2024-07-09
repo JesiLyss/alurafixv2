@@ -8,8 +8,8 @@ function Main({type, content, mainContent, styles}){
 
     return(
     <>
-        <div className={styles}>
         <Title styles="main__title" type={type} content={content} />
+        <div className={styles}>
             {mainContent}
         </div>
     </>

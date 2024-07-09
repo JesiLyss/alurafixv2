@@ -21,7 +21,7 @@ function NewVideo(){
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/categories')
+        fetch('https://my-json-server.typicode.com/gbmarr/api-aluraflix/categories')
         .then(response => response.json())
         .then(data => setCategories(data));
     }, []);
@@ -37,7 +37,7 @@ function NewVideo(){
 
         console.log(newVideo);
 
-        fetch("http://localhost:3000/videos",{
+        fetch("https://my-json-server.typicode.com/gbmarr/api-aluraflix/videos",{
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newVideo)

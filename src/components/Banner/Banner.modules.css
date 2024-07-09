@@ -1,7 +1,7 @@
 .banner {
     position: relative;
     height: 60vh;
-    width: 100vw;
+    width: 100%;
 }
 
 .img {
@@ -38,6 +38,7 @@
 }
 
 @media (max-width: 300px){
+
     .title {
         left: 25%;
         width: 70%;

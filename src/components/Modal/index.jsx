@@ -18,7 +18,7 @@ function Modal({video, onClose}){
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/categories')
+        fetch('https://my-json-server.typicode.com/gbmarr/api-aluraflix/categories')
         .then(response => response.json())
         .then(data => setCategories(data));
     }, []);
@@ -33,7 +33,7 @@ function Modal({video, onClose}){
             image: image
         };
 
-        fetch(`http://localhost:3000/videos/${video.id}`,{
+        fetch(`https://my-json-server.typicode.com/gbmarr/api-aluraflix/videos/${video.id}`,{
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(updateVideo)

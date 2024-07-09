@@ -42,3 +42,9 @@ Alfa Slab One
     font-size: 12px;
   }
 }
+
+@media (max-width: 300px) {
+  *{
+    font-size: 10px;
+  }
+}

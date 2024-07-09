@@ -12,11 +12,11 @@ function Home(){
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:3000/videos")
+        fetch("https://my-json-server.typicode.com/gbmarr/api-aluraflix/videos")
         .then((res) => res.json())
         .then((data) => setVideos(data));
 
-        fetch("http://localhost:3000/categories")
+        fetch("https://my-json-server.typicode.com/gbmarr/api-aluraflix/categories")
         .then((res) => res.json())
         .then((data) => setCategories(data));
     }, []);
