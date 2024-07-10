@@ -18,7 +18,7 @@ function Modal({video, onClose}){
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch('https://my-json-server.typicode.com/gbmarr/api-aluraflix/categories')
+        fetch('https://668e923dbf9912d4c92eda78.mockapi.io/apialura/categories')
         .then(response => response.json())
         .then(data => setCategories(data));
     }, []);
@@ -33,7 +33,10 @@ function Modal({video, onClose}){
             image: image
         };
 
-        fetch(`https://my-json-server.typicode.com/gbmarr/api-aluraflix/videos/${video.id}`,{
+
+        // https://668e923dbf9912d4c92eda78.mockapi.io/apialura/videos
+
+        fetch(`https://668e923dbf9912d4c92eda78.mockapi.io/apialura/videos/${video.id}`,{
             method: 'PUT',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(updateVideo)
