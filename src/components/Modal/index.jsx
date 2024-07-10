@@ -18,7 +18,7 @@ function Modal({video, onClose}){
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch('https://668e923dbf9912d4c92eda78.mockapi.io/apialura/categories')
+        fetch("https://668e923dbf9912d4c92eda78.mockapi.io/apialura/categories")
         .then(response => response.json())
         .then(data => setCategories(data));
     }, []);
@@ -37,7 +37,7 @@ function Modal({video, onClose}){
         // https://668e923dbf9912d4c92eda78.mockapi.io/apialura/videos
 
         fetch(`https://668e923dbf9912d4c92eda78.mockapi.io/apialura/videos/${video.id}`,{
-            method: 'PUT',
+            method: "PUT",
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(updateVideo)
         })

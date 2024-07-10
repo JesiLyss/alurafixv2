@@ -28,11 +28,11 @@ function NewVideo(){
 
     const handleAdd = () => {
         const newVideo = {
-            "title": title,
-            "description": description,
-            "category": category,
-            "url": url,
-            "image": image
+            title: title,
+            description: description,
+            category: category,
+            url: url,
+            image: image
         };
 
         console.log(newVideo);
@@ -46,7 +46,7 @@ function NewVideo(){
         .then(data => {
             console.log(data);
             if(data){
-                window.location = "https://aluraflix-xi-orpin.vercel.app/";
+                window.location.href("https://aluraflix-xi-orpin.vercel.app");
             }
         });
     };
