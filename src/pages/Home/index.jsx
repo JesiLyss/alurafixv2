@@ -12,11 +12,11 @@ function Home(){
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch("https://668e923dbf9912d4c92eda78.mockapi.io/apialura/videos")
+        fetch("http://localhost:3000/videos")
         .then((res) => res.json())
         .then((data) => setVideos(data));
 
-        fetch("https://668e923dbf9912d4c92eda78.mockapi.io/apialura/categories")
+        fetch("http://localhost:3000/categories")
         .then((res) => res.json())
         .then((data) => setCategories(data));
     }, []);

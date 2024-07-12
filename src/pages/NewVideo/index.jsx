@@ -21,7 +21,7 @@ function NewVideo(){
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        fetch('https://668e923dbf9912d4c92eda78.mockapi.io/apialura/categories')
+        fetch('http://localhost:3000/categories')
         .then(response => response.json())
         .then(data => setCategories(data));
     }, []);
@@ -37,7 +37,7 @@ function NewVideo(){
 
         console.log(newVideo);
 
-        fetch("https://668e923dbf9912d4c92eda78.mockapi.io/apialura/videos",{
+        fetch("http://localhost:3000/videos",{
             method: "POST",
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newVideo)
@@ -46,7 +46,7 @@ function NewVideo(){
         .then(data => {
             console.log(data);
             if(data){
-                window.location.href("https://aluraflix-xi-orpin.vercel.app");
+                window.location.href("http://localhost:3001");
             }
         });
     };
