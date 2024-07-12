@@ -1,70 +1,127 @@
-# Getting Started with Create React App
+# Alura Flix
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Alura Flix es una aplicación de React que permite gestionar una colección de videos categorizados. Los videos pueden ser añadidos, editados y eliminados a través de una interfaz amigable.
 
-## Available Scripts
+## Requisitos
 
-In the project directory, you can run:
+- Node.js
+- npm o yarn
 
-### `npm start`
+## Instalación
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Clona el repositorio y navega al directorio del proyecto:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```
+git clone <URL_DEL_REPOSITORIO>
+cd aluraflix
+```
 
-### `npm test`
+Instala las dependencias necesarias:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+npm install
+```
+o
 
-### `npm run build`
+```
+yarn install
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Para simular una API, utilizaremos json-server. Asegurate de tenerlo instalado globalmente:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+npm install -g json-server
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Crea el archivo "db.json" en la carpeta raíz del pryecto con el siguiente contenido:
 
-### `npm run eject`
+```
+{
+  "videos": [
+    {
+      "id": 1,
+      "title": "Video 1",
+      "description": "Description 1",
+      "category": "Frontend",
+      "url": "https://example.com/video1",
+      "image": "https://example.com/image1.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Video 2",
+      "description": "Description 2",
+      "category": "Backend",
+      "url": "https://example.com/video2",
+      "image": "https://example.com/image2.jpg"
+    }
+  ],
+  "categories": ["Frontend", "Backend", "Innovación y Gestión"]
+}
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Ejecutar el proyecto
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Primero, inicia el servidor JSON:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+json-server --watch db.json --port 3001
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Luego, inicia la aplicación React:
 
-## Learn More
+```
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+La aplicación debería estar corriendo en 'http://localhost:3000' y el servidor JSON en 'http://localhost:3001'.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Estructura del proyecto
 
-### Code Splitting
+```
+alura-flix/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── EditModal.js
+│   │   ├── Image.js
+│   │   ├── Navbar.js
+│   │   └── VideoCard.js
+│   ├── pages/
+│   │   ├── Home.js
+│   │   ├── AddVideo.js
+│   │   └── EditVideo.js
+│   ├── App.js
+│   ├── index.js
+│   └── styles.js
+├── db.json
+├── package.json
+├── README.md
+└── vercel.json
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Uso de la API
 
-### Analyzing the Bundle Size
+- Obtener todos los videos:
+```
+GET /videos
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- Agregar un nuevo video:
+```
+POST /videos
+```
 
-### Making a Progressive Web App
+- Actualizar un video:
+```
+PUT /videos/:id
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- Eliminar un video:
+```
+DELETE /videos/:id
+```
 
-### Advanced Configuration
+## Contacto
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Correo electrónico: gab.bmar.05@gmail.com
+* WhatsApp: +5492262339680
