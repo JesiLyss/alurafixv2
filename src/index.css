@@ -1,22 +1,18 @@
-/* Fonts */
-/*
-Barlow
-Alfa Slab One
-*/
+
 
 /* PALETA DE COLORES DE LA APP */
 :root{
-  --white: #f3f2ff;
+  --white: #f8f8f8;
   --grey: #bdafff;
-  --light-violet: #9d82ff;
-  --mid-violet: #734fff;
-  --dark-violet: #5015c2;
+  --light-violet: #9890b3;
+  --mid-violet: #ccc4f0;
+  --dark-violet: #153fb4;
   --green: #35c362;
-  --red: #eb2b45;
-  --black: #18181b;
+  --red: #be5d30;
+  --black: #080808;
 }
 
-/* ESTILOS GENERALES DE LA APP */
+
 * {
   margin: 0;
   padding: 0;

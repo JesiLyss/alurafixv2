@@ -4,7 +4,7 @@ function Footer(){
     return(
     <>
         <div className="footer">
-            <p className="footer__text">Alura Flix - G. Marrero - 2024</p>
+            <p className="footer__text">Gomez Jesica 2024 Alura Latam</p>
         </div>
     </>
     )

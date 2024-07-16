@@ -1,6 +1,6 @@
 .banner {
-    position: relative;
-    height: 60vh;
+    position: center;
+    height: 30vh;
     width: 100%;
 }
 
@@ -22,7 +22,7 @@
     transform: translate(-50%, -50%);
 }
 
-/* MEDIA QUERIES */
+
 @media (max-width: 950px){
     .title {
         left: 25%;
